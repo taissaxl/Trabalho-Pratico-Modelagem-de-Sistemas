@@ -1,0 +1,61 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.bg-header {
+    background-color: #9a8fc8;
+    background-image: url('../images/header_image.jpg'); /* Atualizar para a imagem real */
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* Cartão de produtos */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #9a8fc8;
+}
+
+.card-text {
+    color: #84b69f;
+}
+
+/* Footer */
+footer {
+    background-color: #84b69f;
+    padding: 20px;
+    color: white;
+}
+
+/* Estilo para os painéis de usuário e vendedor */
+.list-group-item {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.list-group-item a:hover {
+    color: #9a8fc8;
+    font-weight: bold;
+}
+
+h2 {
+    color: #9a8fc8;
+}
