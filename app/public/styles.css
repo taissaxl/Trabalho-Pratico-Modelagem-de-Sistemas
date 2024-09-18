@@ -34,23 +34,27 @@ body {
 
 /* Header */
 .bg-header {
-    background-color: #9a8fc8;
-    background-image: url('../public/images/pexels-photo-5490975.jpeg'); 
+    height: 280px;
+    padding-top: 60px;
+    text-align: center;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    background-color: #9a8fc8;
+    background-image: url('../public/images/pexels-photo-5490975.jpeg'); 
 }
 
 header h1 {
     font-size: 4rem;
     font-weight: 900;
-    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 header p {
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Cartão de produtos */
