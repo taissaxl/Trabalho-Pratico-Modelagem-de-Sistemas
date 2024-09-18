@@ -7,10 +7,11 @@ body {
 /* Header */
 .bg-header {
     background-color: #9a8fc8;
-    background-image: url('../public/images/pexels-photo-5490975.jpeg'); /* Atualizar para a imagem real */
+    background-image: url('../public/images/pexels-photo-5490975.jpeg'); 
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 300px;
+    text-shadow: #333;
 }
 
 header h1 {
@@ -24,6 +25,7 @@ header p {
 /* Cartão de produtos */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
   
 .card-title {
@@ -35,10 +37,18 @@ header p {
 }
 
 .card-img-top {
-    height: 400px; /* Ajuste a altura conforme a necessidade */
+    height: 400px; 
     object-fit: cover;
     width: 100%;
 }
+
+#produtos {
+    padding: 0 50px;
+}
+
+.container {
+    max-width: 1140px; /* Limita a largura máxima do container */
+  }
 
 
 /* Footer */
@@ -46,6 +56,7 @@ footer {
     background-color: #84b69f;
     padding: 20px;
     color: white;
+    font-size: 14px;
 }
 
 /* Estilo para os painéis de usuário e vendedor */
@@ -66,4 +77,11 @@ footer {
 
 h2 {
     color: #9a8fc8;
+}
+
+/* Ícones das redes sociais */
+.socialsIcon {
+    height: 35px;
+    width: 35px;
+    padding: 7px;
 }
