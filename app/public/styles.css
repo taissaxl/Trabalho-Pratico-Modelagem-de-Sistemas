@@ -4,6 +4,34 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Estilização customizada da navbar */
+.navbar-custom {
+    background-color: #9a8fc8; 
+}
+  
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+    color: #ffffff; 
+}
+  
+.navbar-custom .nav-link:hover {
+    color: #8dbdeb; 
+}
+  
+.navbar-custom .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; 
+}
+  
+.navbar-toggler {
+    background-color: #ffffff; 
+}
+  
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+  
+
 /* Header */
 .bg-header {
     background-color: #9a8fc8;
@@ -11,15 +39,18 @@ body {
     background-size: cover;
     background-position: center;
     height: 300px;
-    text-shadow: #333;
 }
 
 header h1 {
     font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
 }
 
 header p {
     font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* Cartão de produtos */
