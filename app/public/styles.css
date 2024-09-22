@@ -120,3 +120,61 @@ h2 {
     width: 35px;
     padding: 7px;
 }
+
+/* Estilização para categorias */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+  }
+  
+  .categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .categories li {
+    position: relative;
+  }
+  
+  .category {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .subcategory, .subcategory ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .subcategory ul {
+    position: relative;
+    left: 100%;
+    top: 0;
+  }
+  
+  .category:hover > .subcategory {
+    display: block;
+  }
+  
+  .subcategory li {
+    padding: 8px 15px;
+    white-space: nowrap;
+  }
+  
+  .subcategory li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .subcategory ul li {
+    padding: 5px 10px;
+  }
+  
