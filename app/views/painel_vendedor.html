@@ -10,25 +10,43 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">ReVeste</a>
+            <a class="navbar-brand" id="reveste" href="index.html">
+                <span style="vertical-align: middle;">ReVeste</span>
+                <img src="../public/images/sparkles.gif" class="sparkles">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <form class="d-flex ms-auto form-search" role="search" action="resultados_pesquisa.html" method="GET">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar" name="query">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">
+                            <img src="../public/images/home.png" class="navIcon">
+                            <span style="vertical-align: middle;">Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="painel_vendedor.html">Área do Vendedor</a>
+                        <a class="nav-link" href="painel_vendedor.html">
+                            <img src="../public/images/seller.png" class="seller">
+                            <span style="vertical-align: middle;">Vendedor</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="painel_usuario.html">Área do Usuário</a>
+                        <a class="nav-link" href="painel_usuario.html">
+                            <img src="../public/images/user.png" class="user">
+                            <span style="vertical-align: middle;">Usuário</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> 
     
 
     <header class="container-fluid p-5 bg-header text-center text-white">
