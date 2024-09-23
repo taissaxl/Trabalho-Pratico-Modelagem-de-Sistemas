@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
 /* Estilo global */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #f8f9fa;
+    font-weight: 300;
+    font-size: 20px;
 }
+
+#reveste {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.sparkles {
+    height: 10%;
+    width: 10%;
+    margin-left: -15px;
+}
+
 
 /* Estilização customizada da navbar */
 .navbar-custom {
@@ -12,6 +30,7 @@ body {
 .navbar-custom .navbar-brand, 
 .navbar-custom .nav-link {
     color: #ffffff; 
+    font-weight: 500;
 }
   
 .navbar-custom .nav-link:hover {
@@ -64,11 +83,11 @@ header p {
 }
   
 .card-title {
-    color: #9a8fc8;
+    color: #7a6aae;
 }
 
 .card-text {
-    color: #84b69f;
+    color: #333;
 }
 
 .card-img-top {
@@ -82,7 +101,7 @@ header p {
 }
 
 .container {
-    max-width: 1140px; /* Limita a largura máxima do container */
+    max-width: 1140px;
   }
 
 
@@ -91,7 +110,8 @@ footer {
     background-color: #84b69f;
     padding: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 /* Estilo para os painéis de usuário e vendedor */
@@ -125,92 +145,125 @@ h2 {
 .categories {
     background-color: #f8f9fa;
     padding: 10px 0;
-    border-top: 1px solid #e0e0e0; /* Opcional: adiciona uma linha acima das categorias */
+    border-top: 1px solid #e0e0e0;
 }
   
 .categories-list {
-display: flex;
-justify-content: center; /* Centraliza as categorias horizontalmente */
-list-style: none;
-margin: 0;
-padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza as categorias horizontalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 .categories-list > li {
-position: relative;
-margin: 0 15px; /* Espaçamento entre as categorias */
+    position: relative;
+    margin: 0 15px; /* Espaçamento entre as categorias */
 }
 
 .category {
-font-weight: bold;
-cursor: pointer;
-padding: 10px 15px;
-border-radius: 4px;
-transition: background-color 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #333;
 }
 
 .category:hover {
-background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .subcategory {
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-background-color: #ffffff;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-list-style: none;
-padding: 10px 0;
-min-width: 200px;
-z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+    color: #333;
 }
 
 .subcategory > li {
-position: relative;
+    position: relative;
 }
 
 .subcategory li {
-padding: 8px 20px;
-white-space: nowrap;
-cursor: pointer;
-transition: background-color 0.3s;
+    padding: 8px 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #333;
 }
 
 .subcategory li:hover {
-background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .subcategory ul {
-display: none;
-position: absolute;
-top: 0;
-left: 100%;
-background-color: #ffffff;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-list-style: none;
-padding: 10px 0;
-min-width: 200px;
-z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+    color: #333;
 }
 
 .subcategory li:hover > ul {
-display: block;
+    display: block;
 }
 
 /* Exibe as subcategorias ao passar o mouse */
 .categories-list > li:hover > .subcategory {
-display: block;
+    display: block;
 }
 
 /* Responsividade: ajusta o menu para telas menores */
 @media (max-width: 768px) {
-.categories-list {
-    flex-direction: column;
-    align-items: center;
+    .categories-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories-list > li {
+        margin: 10px 0;
+    }
 }
 
-.categories-list > li {
-    margin: 10px 0;
+/* Barra de Pesquisa*/
+.form-search {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.form-search input[type="search"] {
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.form-search button[type="submit"] {
+    color: #fff; 
+    border-color: #fff;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    cursor: pointer; 
+}
+
+.form-search button[type="submit"]:hover{
+    background-color: #7a6aae;
 }
