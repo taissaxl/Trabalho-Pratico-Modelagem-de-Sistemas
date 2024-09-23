@@ -21,18 +21,41 @@ body {
     margin-left: -15px;
 }
 
+.navIcon {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.cabide {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.user {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 5px;
+}
 
 /* Estilização customizada da navbar */
 .navbar-custom {
     background-color: #9a8fc8; 
+    font-size: 23px;
+    justify-content: center;
 }
-  
+
+.navbar-custom .nav-link {
+    text-align: center;
+}
+
 .navbar-custom .navbar-brand, 
 .navbar-custom .nav-link {
     color: #ffffff; 
     font-weight: 500;
 }
-  
+
 .navbar-custom .nav-link:hover {
     color: #8dbdeb; 
 }
