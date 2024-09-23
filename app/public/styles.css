@@ -9,10 +9,14 @@ body {
     font-size: 20px;
 }
 
-#reveste {
+#reveste-principal, #reveste-sec {
     font-family: 'Dancing Script', cursive;
     font-weight: 550;
     font-size: 40px;
+}
+
+#reveste-principal {
+    margin-left: 8%;
 }
 
 .sparkles {
@@ -21,28 +25,31 @@ body {
     margin-left: -15px;
 }
 
-.navIcon {
-    height: 25px;
-    width: 25px;
-    margin-bottom: 5px;
-}
-
-.seller {
+.home, .seller, .favorites, .shopping-bag, .user {
     height: 30px;
     width: 30px;
+}
+
+.home, .favorites, .shopping-bag {
+    margin-right: 15px;
+}
+
+.favorites {
+    margin-bottom: 10px;
+}
+
+.navIncon, .seller {
     margin-bottom: 5px;
 }
 
 .user {
-    height: 35px;
-    width: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Estilização customizada da navbar */
 .navbar-custom {
     background-color: #9a8fc8; 
-    font-size: 23px;
+    font-size: 20px;
     justify-content: center;
 }
 
@@ -99,6 +106,11 @@ header p {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.lead {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 /* Cartão de produtos */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -125,8 +137,7 @@ header p {
 
 .container {
     max-width: 1140px;
-  }
-
+}
 
 /* Footer */
 footer {
@@ -265,12 +276,12 @@ h2 {
 
 /* Barra de Pesquisa*/
 .form-search {
-    width: 40%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-62%, -50%);
 }
 
 .form-search input[type="search"] {
@@ -289,4 +300,85 @@ h2 {
 
 .form-search button[type="submit"]:hover{
     background-color: #7a6aae;
+}
+
+/* Configuracao de Conta */
+.text-account-info {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    display: block;
+    width: fit-content;
+}
+
+.informacoes-de-conta {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 90%;
+    margin-left: 150px;
+}
+  
+.informacoes-de-conta h2 {
+    margin-bottom: 50px auto;
+    display: inline-block;
+}
+  
+.info-personal, .info-adress {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+  
+.info-personal p, .info-adress p {
+    display: inline-flexbox;
+}
+  
+.info-personal strong, .info-adress strong {
+    display: inline-block;
+}
+
+.alterar-informacoes {
+    margin: 50px 250px 50px 250px;
+}
+
+.alterar-informacoes h2 {
+    text-align: center;
+}
+
+/* Botoes de Alterar Informacoes */
+.alterar-informacoes .btn {
+    margin: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+  
+.alterar-informacoes .btn-primary {
+    background-color: #8dbdeb;
+    color: #ffffff;
+}
+  
+.alterar-informacoes .btn-primary:hover {
+    background-color: #569fe2;
+}
+  
+.alterar-informacoes .btn-secondary {
+    background-color: #999999;
+    color: #ffffff;
+}
+  
+.alterar-informacoes .btn-secondary:hover {
+    background-color: #777777;
+}
+
+/* Login */
+.btn-primary {
+    background-color: #78afe2;
+    border-color: #569fe2;
+    color: #ffffff;
 }
