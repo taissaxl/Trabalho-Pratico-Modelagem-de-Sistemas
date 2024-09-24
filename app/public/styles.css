@@ -64,7 +64,7 @@ body {
 }
 
 .navbar-custom .nav-link:hover {
-    color: #8dbdeb; 
+    color:#7a6aae; 
 }
   
 .navbar-custom .nav-link.active {
@@ -291,15 +291,17 @@ h2 {
 }
 
 .form-search button[type="submit"] {
-    color: #fff; 
-    border-color: #fff;
-    border-radius: 5px; 
-    padding: 10px 20px;
+    border: none;
     cursor: pointer; 
 }
 
 .form-search button[type="submit"]:hover{
     background-color: #7a6aae;
+}
+
+.search-icon {
+    height: 30px;
+    width: 30px;
 }
 
 /* Configuracao de Conta */
