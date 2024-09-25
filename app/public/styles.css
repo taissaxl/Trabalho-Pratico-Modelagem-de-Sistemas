@@ -235,6 +235,11 @@ h2 {
     color: #333;
 }
 
+.subcategory li, .subcategory a {
+    color: #333;
+    text-decoration: none;
+}
+
 .subcategory li:hover {
     background-color: #f0f0f0;
 }
