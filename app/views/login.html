@@ -22,7 +22,7 @@
               <input class="form-control me-2" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar" name="query">
               <button class="btn btn-outline-success" type="submit">
                 <img src="../public/images/search.png" class="search-icon" alt="Pesquisar">
-            </button>
+              </button>
             </form>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,11 +32,12 @@
                             <img src="../public/images/home.png" class="home">
                         </a>
                     </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="favoritos.html">
-                        <img src="../public/images/favoritos.png" class="favorites">
-                    </a>
-                    <li class="nav-item"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html">
+                            <img src="../public/images/favoritos.png" class="favorites">
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="carrinho.html">
                             <img src="../public/images/shopping-bag.png" class="shopping-bag">
                         </a>
@@ -46,7 +47,6 @@
                             <img src="../public/images/seller.png" class="seller">
                             <span style="vertical-align: middle;">Vendedor</span>
                         </a>
-                    </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="painel_usuario.html">
@@ -59,23 +59,49 @@
         </div>
     </nav>    
 
+    <header class="container-fluid p-5 bg-header text-center text-white">
+        <h1 class="display-4">ReVeste</h1>
+        <p class="lead">ReVeste-se de estilo</p>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">Login</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+                <p class="text-center mt-3">
+                    Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+                </p>
+                <p class="text-center">
+                    <a href="esqueci_senha.html">Esqueci minha senha</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <footer class="text-center text-white p-4" style="background-color: #84b69f;">
         <p>ReVeste © 2024 • CNPJ: 12.345.678/0000-99</p>
         <p>contato@reveste.com • atendimento de segunda à sexta das 09h às 18h e sábado das 08h às 14h</p>
         <p>+55 (32) 99999-9999 • atendimento chat de segunda à sexta das 09h às 18h</p>
         <div>
-            <a>
-                <img src="../public/images/Instagram_icon.png" class="socialsIcon" alt="icone instagram">
-            </a>
-            <a>
-                <img src="../public/images/2023_Facebook_icon.svg.png" class="socialsIcon" alt="icone facebook">
-            </a>
-            <a>
-                <img src="../public/images/12105338.png" class="socialsIcon" alt="icone threads">
-            </a>
-            <a>
-                <img src="../public/images/WhatsApp_icon.png" class="socialsIcon" alt="icone whatsapp">
-            </a>
+            <a href="#"><img src="../public/images/Instagram_icon.png" class="socialsIcon" alt="icone instagram"></a>
+            <a href="#"><img src="../public/images/2023_Facebook_icon.svg.png" class="socialsIcon" alt="icone facebook"></a>
+            <a href="#"><img src="../public/images/12105338.png" class="socialsIcon" alt="icone threads"></a>
+            <a href="#"><img src="../public/images/WhatsApp_icon.png" class="socialsIcon" alt="icone whatsapp"></a>
         </div>
     </footer>
 
