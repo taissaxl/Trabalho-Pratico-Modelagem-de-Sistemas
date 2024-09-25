@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - ReVeste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="reveste-principal" href="index.html">
+                <span style="vertical-align: middle;">ReVeste</span>
+                <img src="../public/images/sparkles.gif" class="sparkles" alt="logo ReVeste">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex ms-auto form-search" role="search" action="resultados_pesquisa.html" method="GET">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar" name="query">
+              <button class="btn btn-outline-success" type="submit">
+                <img src="../public/images/search.png" class="search-icon" alt="Pesquisar">
+              </button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <img src="../public/images/home.png" class="home" alt="home icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html">
+                            <img src="../public/images/favoritos.png" class="favorites" alt="favoritos icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">
+                            <img src="../public/images/shopping-bag.png" class="shopping-bag" alt="carrinho icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_vendedor.html">
+                            <img src="../public/images/seller.png" class="seller" alt="vendedor icon">
+                            <span style="vertical-align: middle;">Vendedor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_usuario.html">
+                            <img src="../public/images/user.png" class="user" alt="usuário icon">
+                            <span style="vertical-align: middle;">Usuário</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid p-5 bg-header text-center text-white">
+        <h1 class="display-4">ReVeste</h1>
+        <p class="lead">ReVeste-se de estilo</p>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">Finalizar Compra</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Informações de Entrega</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+                    </div>
+                    <div class="mb-3">
+                        <label for="estado" class="form-label">Estado</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Digite seu estado">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h4>Resumo do Pedido</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Subtotal: <strong>R$ 379,70</strong></li>
+                    <li class="list-group-item">Frete: <strong>R$ 15,00</strong></li>
+                    <li class="list-group-item">Total: <strong>R$ 394,70</strong></li>
+                </ul>
+                <h4 class="mt-4">Forma de Pagamento</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="numeroCartao" class="form-label">Número do Cartão</label>
+                        <input type="text" class="form-control" id="numeroCartao" placeholder="Digite o número do cartão">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomeCartao" class="form-label">Nome no Cartão</label>
+                        <input type="text" class="form-control" id="nomeCartao" placeholder="Digite o nome como no cartão">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="validadeCartao" class="form-label">Validade</label>
+                            <input type="text" class="form-control" id="validadeCartao" placeholder="MM/AA">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cvvCartao" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvvCartao" placeholder="CVV">
+                        </div>
+                    </div>
+                </form>
+                <a href="confirmacao.html" class="btn btn-success btn-block mt-3">Confirmar Pagamento</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white p-4" style="background-color: #84b69f;">
+        <p>ReVeste © 2024 • CNPJ: 12.345.678/0000-99</p>
+        <p>contato@reveste.com • atendimento de segunda à sexta das 09h às 18h e sábado das 08h às 14h</p>
+        <p>+55 (32) 99999-9999 • atendimento chat de segunda à sexta das 09h às 18h</p>
+        <div>
+            <a href="#"><img src="../public/images/Instagram_icon.png" class="socialsIcon" alt="icone instagram"></a>
+            <a href="#"><img src="../public/images/2023_Facebook_icon.svg.png" class="socialsIcon" alt="icone facebook"></a>
+            <a href="#"><img src="../public/images/12105338.png" class="socialsIcon" alt="icone threads"></a>
+            <a href="#"><img src="../public/images/WhatsApp_icon.png" class="socialsIcon" alt="icone whatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
