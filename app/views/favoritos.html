@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ReVeste</title>
+    <title>Favoritos - ReVeste</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/styles.css">
 </head>
@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" id="reveste-principal" href="index.html">
                 <span style="vertical-align: middle;">ReVeste</span>
-                <img src="../public/images/sparkles.gif" class="sparkles">
+                <img src="../public/images/sparkles.gif" class="sparkles" alt="logo ReVeste">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,28 +29,28 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
-                            <img src="../public/images/home.png" class="home">
+                            <img src="../public/images/home.png" class="home" alt="home icon">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="favoritos.html">
-                            <img src="../public/images/favoritos.png" class="favorites">
+                            <img src="../public/images/favoritos.png" class="favorites" alt="favoritos icon">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="carrinho.html">
-                            <img src="../public/images/shopping-bag.png" class="shopping-bag">
+                            <img src="../public/images/shopping-bag.png" class="shopping-bag" alt="carrinho icon">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="painel_vendedor.html">
-                            <img src="../public/images/seller.png" class="seller">
+                            <img src="../public/images/seller.png" class="seller" alt="vendedor icon">
                             <span style="vertical-align: middle;">Vendedor</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="painel_usuario.html">
-                            <img src="../public/images/user.png" class="user">
+                            <img src="../public/images/user.png" class="user" alt="usuário icon">
                             <span style="vertical-align: middle;">Usuário</span>
                         </a>
                     </li>
@@ -65,30 +65,43 @@
     </header>
 
     <div class="container my-5">
-        <h2 class="text-center">Login</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form action="/login" method="POST">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Lembrar-me</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
-                </form>
-                <p class="text-center mt-3">
-                    Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
-                </p>
-                <p class="text-center">
-                    <a href="esqueci_senha.html">Esqueci minha senha</a>
-                </p>
+        <h2 class="text-center">Meus Favoritos</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço Unitário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vestido Midi Estampado</td>
+                            <td>R$ 139,90</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+                                <button class="btn btn-danger btn-sm">Remover</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jaqueta Jeans Oversized</td>
+                            <td>R$ 199,90</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+                                <button class="btn btn-danger btn-sm">Remover</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h4>Resumo dos Favoritos</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Total de Itens: <strong>2</strong></li>
+                </ul>
+                <a href="carrinho.html" class="btn btn-success btn-block mt-3">Ir para o Carrinho</a>
             </div>
         </div>
     </div>
