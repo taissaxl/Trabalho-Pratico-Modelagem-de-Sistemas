@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - ReVeste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="reveste-principal" href="index.html">
+                <span style="vertical-align: middle;">ReVeste</span>
+                <img src="../public/images/sparkles.gif" class="sparkles" alt="logo ReVeste">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex ms-auto form-search" role="search" action="resultados_pesquisa.html" method="GET">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar" name="query">
+              <button class="btn btn-outline-success" type="submit">
+                <img src="../public/images/search.png" class="search-icon" alt="Pesquisar">
+              </button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <img src="../public/images/home.png" class="home" alt="home icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html">
+                            <img src="../public/images/favoritos.png" class="favorites" alt="favoritos icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">
+                            <img src="../public/images/shopping-bag.png" class="shopping-bag" alt="carrinho icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_vendedor.html">
+                            <img src="../public/images/seller.png" class="seller" alt="vendedor icon">
+                            <span style="vertical-align: middle;">Vendedor</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_usuario.html">
+                            <img src="../public/images/user.png" class="user" alt="usuário icon">
+                            <span style="vertical-align: middle;">Usuário</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <header class="container-fluid p-5 bg-header text-center text-white">
+        <h1 class="display-4">ReVeste</h1>
+        <p class="lead">ReVeste-se de estilo</p>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">Meus Favoritos</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço Unitário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vestido Midi Estampado</td>
+                            <td>R$ 139,90</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+                                <button class="btn btn-danger btn-sm">Remover</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jaqueta Jeans Oversized</td>
+                            <td>R$ 199,90</td>
+                            <td>
+                                <button class="btn btn-success btn-sm">Adicionar ao Carrinho</button>
+                                <button class="btn btn-danger btn-sm">Remover</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h4>Resumo dos Favoritos</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Total de Itens: <strong>2</strong></li>
+                </ul>
+                <a href="carrinho.html" class="btn btn-success btn-block mt-3">Ir para o Carrinho</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white p-4" style="background-color: #84b69f;">
+        <p>ReVeste © 2024 • CNPJ: 12.345.678/0000-99</p>
+        <p>contato@reveste.com • atendimento de segunda à sexta das 09h às 18h e sábado das 08h às 14h</p>
+        <p>+55 (32) 99999-9999 • atendimento chat de segunda à sexta das 09h às 18h</p>
+        <div>
+            <a href="#"><img src="../public/images/Instagram_icon.png" class="socialsIcon" alt="icone instagram"></a>
+            <a href="#"><img src="../public/images/2023_Facebook_icon.svg.png" class="socialsIcon" alt="icone facebook"></a>
+            <a href="#"><img src="../public/images/12105338.png" class="socialsIcon" alt="icone threads"></a>
+            <a href="#"><img src="../public/images/WhatsApp_icon.png" class="socialsIcon" alt="icone whatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
