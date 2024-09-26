@@ -121,6 +121,11 @@ header p {
     color: #7a6aae;
 }
 
+.card-title a {
+    color: #7a6aae;
+    text-decoration: none;
+}
+
 .card-text {
     color: #333;
 }
