@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Prático - Modelagem de Sistemas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="reveste-principal" href="index.html">
+                <span style="vertical-align: middle;">ReVeste</span>
+                <img src="../public/images/sparkles.gif" class="sparkles">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <form class="d-flex ms-auto form-search" role="search" action="resultados_pesquisa.html" method="GET">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar produtos" aria-label="Pesquisar" name="query">
+              <button class="btn btn-outline-success" type="submit">
+                <img src="../public/images/search.png" class="search-icon" alt="Pesquisar">
+            </button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <img src="../public/images/home.png" class="home">
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="favoritos.html">
+                        <img src="../public/images/favoritos.png" class="favorites">
+                    </a>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="carrinho.html">
+                            <img src="../public/images/shopping-bag.png" class="shopping-bag">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_vendedor.html">
+                            <img src="../public/images/seller.png" class="seller">
+                            <span style="vertical-align: middle;">Vendedor</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="painel_usuario.html">
+                            <img src="../public/images/user.png" class="user">
+                            <span style="vertical-align: middle;">Usuário</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+
+    <header class="container-fluid p-5 bg-header text-center text-white">
+        <h1 class="display-4" id="reveste-sec">ReVeste</h1>
+        <p class="lead">ReVeste-se de estilo</p>
+        <a href="#produtos" class="btn btn-light btn-lg">Produtos</a>
+    </header>
+
+    <ul class="categories-list">
+      <li class="category">Destaques
+          <ul class="subcategory">
+              <li><a href="produtos.html?categoria=Destaques&subcategoria=Mais%20Bem%20Avaliadas">Mais Bem Avaliadas</a></li>
+              <li><a href="produtos.html?categoria=Destaques&subcategoria=Na%20Moda">Na Moda</a></li>
+              <li><a href="produtos.html?categoria=Destaques&subcategoria=Novas%20Chegadas">Novas Chegadas</a></li>
+              <li><a href="produtos.html?categoria=Destaques&subcategoria=Upcycled">Upcycled</a></li>
+          </ul>
+      </li>
+      <li class="category">Feminino
+          <ul class="subcategory">
+              <li>Roupas
+                  <ul>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Blusas">Blusas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Calças">Calças</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Camisas">Camisas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Camisetas">Camisetas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Casacos%20e%20Jaquetas">Casacos e Jaquetas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Coletes">Coletes</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Jeans">Jeans</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Moletom">Moletom</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Macacões">Macacões</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Regatas">Regatas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Saias">Saias</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Shorts%20e%20Bermudas">Shorts e Bermudas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Suéteres%20e%20Cardigans">Suéteres e Cardigans</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Praia">Praia</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Roupas&item=Vestidos">Vestidos</a></li>
+                  </ul>
+              </li>
+              <li>Calçados
+                  <ul>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Botas">Botas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Rasteirinhas">Rasteirinhas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Sandálias">Sandálias</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Sapatilhas">Sapatilhas</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Sapatos">Sapatos</a></li>
+                      <li><a href="produtos.html?categoria=Feminino&subcategoria=Calçados&item=Tênis">Tênis</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li class="category">Masculino
+          <ul class="subcategory">
+              <li>Roupas
+                  <ul>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Calças">Calças</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Calças%20Jeans">Calças Jeans</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Camisas">Camisas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Camisetas">Camisetas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Casacos%20e%20Jaquetas">Casacos e Jaquetas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Jeans">Jeans</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Moletons">Moletons</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Polos">Polos</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Praia">Praia</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Regatas">Regatas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Shorts%20e%20Bermudas">Shorts e Bermudas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Roupas&item=Suéteres%20e%20Cardigans">Suéteres e Cardigans</a></li>
+                  </ul>
+              </li>
+              <li>Calçados
+                  <ul>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Calçados&item=Botas">Botas</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Calçados&item=Sandálias">Sandálias</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Calçados&item=Sapatos">Sapatos</a></li>
+                      <li><a href="produtos.html?categoria=Masculino&subcategoria=Calçados&item=Tênis">Tênis</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li class="category">Infantil
+          <ul class="subcategory">
+              <li>Bebês
+                  <ul>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Body">Body</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Camisas%20e%20Camisetas">Camisas e Camisetas</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Calças">Calças</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Calçados">Calçados</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Casacos">Casacos</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Macacões">Macacões</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Praia">Praia</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Saias%20e%20Vestidos">Saias e Vestidos</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Bebês&item=Shorts%20e%20Bermudas">Shorts e Bermudas</a></li>
+                  </ul>
+              </li>
+              <li>Meninas
+                  <ul>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Camisas%20e%20Camisetas">Camisas e Camisetas</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Calças">Calças</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Calçados">Calçados</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Casacos%20e%20Jaquetas">Casacos e Jaquetas</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Coletes">Coletes</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Macacões">Macacões</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Praia">Praia</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Saias%20e%20Vestidos">Saias e Vestidos</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninas&item=Shorts%20e%20Bermudas">Shorts e Bermudas</a></li>
+                  </ul>
+              </li>
+              <li>Meninos
+                  <ul>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Camisas%20e%20Camisetas">Camisas e Camisetas</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Calças">Calças</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Calçados">Calçados</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Casacos%20e%20Jaquetas">Casacos e Jaquetas</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Coletes">Coletes</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Macacões">Macacões</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Praia">Praia</a></li>
+                      <li><a href="produtos.html?categoria=Infantil&subcategoria=Meninos&item=Shorts%20e%20Bermudas">Shorts e Bermudas</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li class="category">Acessórios
+          <ul class="subcategory">
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Bolsas">Bolsas</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Chapéus">Chapéus</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Cintos">Cintos</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Lenços">Lenços</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Óculos">Óculos</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Bonés">Bonés</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Gravatas">Gravatas</a></li>
+              <li><a href="produtos.html?categoria=Acessórios&subcategoria=Relógios">Relógios</a></li>
+          </ul>
+      </li>
+  </ul>  
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Blusa Colorida Feminina</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+            <img src="../public/images/201212_UPCYCLINGMOB_3.jpeg" class="img-fluid" alt="Blusa Colorida Feminina">
+        </div>
+        <div class="col-md-6">
+            <h3>Descrição</h3>
+            <p>Blusa upcycled colorida feminina, confeccionada a partir de retalhos, com um visual artesanal e despojado. Ótima opção para quem busca estilo sustentável e único.</p>
+            <h3>Informações do Produto</h3>
+            <ul>
+            <li>Cor: Várias Cores</li>
+            <li>Tamanho: PP | P | M | G | GG</li>
+            <li>Material: Malha</li>
+            </ul>
+            <h3>Preço</h3>
+            <p>R$ 10.99</p>
+            <div class="btn-group">
+            <button class="btn btn-primary">Comprar</button>
+            <button class="btn btn-favoritar btn-block" style="background-color: #9a8fc8; color: #ffffff;">Favoritar</button>
+            <button class="btn btn-adicionar btn-block" style="background-color: #84b69f; color: #ffffff;">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        </div>
+    </div>
+      
+    <footer class="text-center text-white p-4">
+        <p>ReVeste © 2024 • CNPJ: 12.345.678/0000-99</p>
+        <p>contato@reveste.com • atendimento de segunda à sexta das 09h às 18h e sábado das 08h às 14h</p>
+        <p>+55 (32) 99999-9999 • atendimento chat de segunda à sexta das 09h às 18h</p>
+        <div>
+            <a>
+                <img src="../public/images/Instagram_icon.png" class="socialsIcon" alt="icone instagram">
+            </a>
+            <a>
+                <img src="../public/images/2023_Facebook_icon.svg.png" class="socialsIcon" alt="icone facebook">
+            </a>
+            <a>
+                <img src="../public/images/12105338.png" class="socialsIcon" alt="icone threads">
+            </a>
+            <a>
+                <img src="../public/images/WhatsApp_icon.png" class="socialsIcon" alt="icone whatsapp">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./exemplo.js"></script>
+    
+</body>
+</html>
