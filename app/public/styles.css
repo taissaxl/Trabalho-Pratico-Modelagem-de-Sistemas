@@ -389,3 +389,120 @@ h2 {
     border-color: #569fe2;
     color: #ffffff;
 }
+
+/* Meus Favoritos */
+.table img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.btn-success {
+    background-color:#569fe2; 
+    border-color: #569fe2;
+    color: #FFFFFF; 
+}
+  
+.btn-danger {
+    background-color: #E74C3C; 
+    border-color: #E74C3C;
+    color: #FFFFFF; 
+}
+
+.btn-success:hover {
+    background-color:#3185d3; 
+    border-color: #569fe2;
+}
+
+/* Listagem de Produtos */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+  
+.table th {
+    font-weight: bold;
+}
+  
+.table td {
+    vertical-align: middle;
+}
+  
+.table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+  
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table td:nth-child(3) {
+    width: 200px;
+}
+
+.table td:nth-child(6) {
+    width: 250px;
+}
+
+.listagem {
+    color: #569fe2;
+    text-align: center;
+    margin-top:20px;
+}
+
+.imgProduto {
+    width: 35px;
+    height: 35px;
+}
+
+.selecionar-produto {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+  
+.selecionar-produto:checked {
+    background-color: #ccc;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#adicionar-produto, #remover-produto {
+    background-color:#569fe2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#adicionar-produto:hover, #remover-produto:hover {
+    background-color:#3185d3;
+}
+  
+#remover-produto {
+    background-color: #e74c3c;
+}
+  
+#remover-produto:hover {
+    background-color: #c0392b;
+}
